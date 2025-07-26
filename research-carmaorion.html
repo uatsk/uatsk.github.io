@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARMA-NRO</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="group.html">Group</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">Research ▼</a>
+                    <div class="dropdown-content">
+                        <a href="research-irdc.html">Infrared Dark Clouds</a>
+                        <a href="research-carmaorion.html">The CARMA-NRO Orion Survey</a>
+                        <a href="research-arizona.html">Arizona Radio Telescopes</a>
+                        <a href="research-cmr.html">Collision-induced Magnetic Reconnection</a>
+                        <!-- <a href="mrcol_filament.html">interactive</a> -->
+                    </div>
+                </li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="talks.html">Talks</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>The CARMA-NRO Orion Survey</h2>
+            <p>
+                The Combined Array for Research in Millimeter Astronomy (CARMA)-Nobeyama 
+                Radio Observatory (NRO) Orion Survey is a high-resolution molecular-line 
+                survey of the Orion A giant molecular cloud (about 388 pc away), 
+                mapping the <sup>12</sup>CO, <sup>13</sup>CO, and C<sup>18</sup>O (J=1-0) lines. 
+                It is aimed at exploring star-forming structures with unprecedented detail.
+                We combine data from the CARMA interferometer and the NRO-45m single-dish telescope
+                in uv-space to recover structure from ~0.01 pc to ~10 pc scales, providing
+                high-dynamic-range molecular line cubes for the massive star-forming cloud.
+                The data products are available on <a href="https://doi.org/10.7910/DVN/6Q26PN" target="_blank">Harvard Dataverse</a>.
+            </p>
+            <p>
+                <b>Team members (PI: Sargent, Anneila I.):</b>
+                <br>
+                Sargent, Anneila I. ;  Arce, Héctor G.  ;  Carpenter, John M.  ;  Nakamura, Fumitaka  ;  Shimajiri, Yoshito  ; Takemura, Hideaki  ;  Isella, Andrea  ;  Ossenkopf-Okada, Volker  ; Sánchez-Monge, Álvaro ;  Bally, John  ;  Kong, Shuo  ;  Feddersen, Jesse R.  ; Suri, Sümeyye  ; Kauffmann, Jens  ;  Pillai, Thushara  ;  Pineda, Jaime E.  ;  Koda, Jin  ; Lis, Dariusz C.  ;  Padoan, Paolo  ;  Klessen, Ralf  ; Mairs, Steve  ;  Goodman, Alyssa  ;  Goldsmith, Paul ; McGehee, Peregrine  ;  Schilke, Peter  ;  Teuben, Peter J.  ; Maureira, María José  ;  Hara, Chihomi ;  Ginsburg, Adam  ; Burkhart, Blakesley  ;  Smith, Rowan J.  ;  Schmiedeke, Anika  ; Pineda, Jorge L.  ;  Ishii, Shun  ;  Sasaki, Kazushige ;  Kawabe, Ryohei  ; Urasawa, Yumiko ;  Oyamada, Shuri ;  Tanabe, Yoshihiro
+            </p>
+            <p><b>The two data release papers:</b></p>
+            <ul>
+                <li><a href="https://iopscience.iop.org/article/10.3847/1538-4365/aabafc" target="_blank">Kong et al. (2018), ApJS, 236, 25</a> (the original data paper).</li>
+                <li><a href="https://iopscience.iop.org/article/10.3847/2515-5172/abf051" target="_blank">Kong et al. (2021), RNAAS, 5, 55</a> (including additional data to the south of L1641).</li>
+            </ul>
+            <p><b>Peak intensity maps of the three lines:</b></p>
+            <figure>
+                <img src="figures/carmaorion.pdf" alt="CARMA-NRO Orion Survey Results" style="width:100%;">
+                <figcaption>Results from the CARMA-NRO Orion Survey showing molecular line emission structures. Note, there is a special discussion about the line intensity scale in the 2018 data paper section 3.</figcaption>
+            </figure>
+            <p><b>A brief description of the data combination (for more details, see the 2018 data paper or <a href="https://iopscience.iop.org/article/10.1088/0067-0049/193/1/19" target="_blank">Koda et al. (2011), ApJS, 193, 19</a>):</b></p>
+            <p>
+                To combine the NRO45 data with the CARMA data, 
+                we first need to be certain that the flux scale of the two datasets match. 
+                We modify both datasets so that both maps are sensitive to the same range 
+                of spatial scales. By selecting visibilities in the overlapping uv-coverage 
+                and comparing the flux in the images obtained in the two data sets, we can 
+                determine a flux scale factor F<sub>CARMA</sub>/F<sub>NRO45</sub>. 
+                We obtained the ratio of 
+                intensities between the two dirty maps for each pixel with a signal-to-noise 
+                ratio greater than 20 within the region of interest. Plots of the distribution 
+                of the ratio for different  regions and channels show that they all have a 
+                gaussian-like distribution with a mean value of about 1.6 for 12CO. 
+                We thus adopted a flux scale factor of 1.6 for 12CO(1-0).
+                We multiply the flux scale factor to the NRO45 cube. Then, we de-convolve the 
+                NRO45 cube with the NRO45 beam, followed by de-mosaicking into the different 
+                CARMA mosaic pointings. For each pointing we obtain visibilities as if they 
+                were observed using a set of randomly generated baselines (following a gaussian 
+                distribution) that mimic the response of the NRO45. The number of 
+                points mostly depends on the value we assume for the NRO45 visibility integration 
+                time and the requirement that the sensitivity per pixel in uv-space for NRO45 
+                visibilities be similar to that of the CARMA visibilities in the uv-range in 
+                which they overlap (3-6 kλ). We then merge all the modeled NRO45 visibility 
+                files together, followed by a joint de-convolution with the CARMA data.
+            </p>
+            <p><b>The improvement of the combined image:</b></p>
+            <div style="display: flex; gap: 20px; margin: 20px 0;">
+                <figure style="flex: 1 1 calc(33.33% - 14px);">
+                    <img src="figures/ONC_mask_regrid_peak_regrid_12CO_specsmooth.pdf" alt="ONC Figure 1" style="width:100%;">
+                    <figcaption>NRO45 <sup>12</sup>CO(1-0) observations in the Orion KL region.</figcaption>
+                </figure>
+                <figure style="flex: 1 1 calc(33.33% - 14px);">
+                    <img src="figures/ONC_mask_regrid_peak_12co_CARMAonly_pix_1_Tmb.pdf" alt="ONC Figure 2" style="width:100%;">
+                    <figcaption>CARMA observations in the same region</figcaption>
+                </figure>
+                <figure style="flex: 1 1 calc(33.33% - 14px);">
+                    <img src="figures/ONC_peak_12co_pix_2_Tmb.pdf" alt="ONC Figure 3" style="width:100%;">
+                    <figcaption>Combined data in the same region.</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Dr. Shuo Kong</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

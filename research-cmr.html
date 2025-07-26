@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMR</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="group.html">Group</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">Research ▼</a>
+                    <div class="dropdown-content">
+                        <a href="research-irdc.html">Infrared Dark Clouds</a>
+                        <a href="research-carmaorion.html">The CARMA-NRO Orion Survey</a>
+                        <a href="research-arizona.html">Arizona Radio Telescopes</a>
+                        <a href="research-cmr.html">Collision-induced Magnetic Reconnection</a>
+                        <!-- <a href="mrcol_filament.html">interactive</a> -->
+                    </div>
+                </li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="talks.html">Talks</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>The Collision-induced Magnetic Reconnection mechanism</h2>
+            <p>I am interested in molecular cloud and star formation.
+                Most recently, I am focusing on understanding the role
+                of magnetic fields in the interstellar medium (ISM) 
+                through a combination of observational and theoretical 
+                approaches. The ISM, a major constituent of the Galaxy 
+                and an active participant in the baryon cycle, is 
+                essentially a plasma that is threaded with magnetic fields. 
+                As such, understanding the interplay between magnetic fields 
+                and the ISM is crucial. Traditional studies have often 
+                emphasized the resistance of magnetic fields to gas 
+                condensation, portraying them as playing a primarily 
+                passive role. This view is part of the reason that 
+                magnetic fields were thought to be secondary in star 
+                formation and galaxy evolution. To expand this perspective, 
+                I take a different approach by exploring an active role 
+                of magnetic fields. Specifically, by modeling the novel 
+                <b>Collision-induced Magnetic Reconnection (CMR)</b>
+                mechanism, I show that magnetic fields can actively condense 
+                interstellar gas into star-forming clouds. The new model, 
+                firmly based on observational motivations, suggests that 
+                magnetic fields can be dynamically decisive, offering a 
+                missing piece in our understanding of the interplay
+                between magnetic fields and the ISM. 
+            </p>
+        </section>
+
+        <section class="media-section">
+            <div class="media-grid">
+                <div class="media-column">
+                    <figure>
+                        <img src="figures/cmrsetup.png" alt="Research Figure">
+                        <figcaption>
+                            Initial condition for CMR from the fiducial model simulation MRCOL from
+                            <a href="https://iopscience.iop.org/article/10.3847/1538-4357/abc687"
+                            target="_blank">Kong et al. (2021, ApJ, 906, 80)</a>.
+                            Two spherical clouds collide (or any other shape, here I use spheres 
+                            for simplicity) at the interface between reverse magnetic fields.
+                            Black arrows indicate initial magnetic fields (with only z-components):
+                            B<sub>1,z</sub> > 0 (for x<0) and B<sub>2,z</sub> < 0 (for x>0).
+                            The cartesian coordinate system axes are illustrated at lower-left.
+                            The point of collision is at the origin (the colliding clouds
+                            can be separated initially).
+                            The idea is to have colliding flows/clouds bring reverse fields 
+                            from afar to trigger magnetic reconnection.
+                            Collision velocities along the x-axis are v<sub>1,x</sub> > 0 and
+                            v<sub>2,x</sub> < 0. The CMR filament forms along the y-axis
+                            through the origin (see movie on the right). 
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="media-column">
+                    <div class="video-container">
+                        <video controls width="100%">
+                            <source src="movies/CMRfield.mpg" type="video/mpeg">
+                            Your browser does not support the video tag.
+                        </video>
+                        <figcaption>
+                            Volume rendering of dense gas as a function of
+                            simulation time. The streamlines show 
+                            magnetic fields near the collision midplane (x=0).
+                            Initially a pancake structure is formed in the 
+                            middle. Soon, reconnection of fields on two sides 
+                            of the pancake happens, forming field loops that 
+                            encircle the pancake. Due to magnetic tension,
+                            the field loops pinch the pancake, pulling gas
+                            toward the central axis. As a result, a filament
+                            forms along the central axis. 
+                        </figcaption>
+                    </div>
+                </div>
+            </div>
+            <p>
+                A movie showing the filament formation via CMR. 
+                The simulation data is from the fiducial model MRCOL
+                from <a href="https://iopscience.iop.org/article/10.3847/1538-4357/abc687" 
+                target="_blank">Kong et al. (2021, ApJ, 906, 80)</a>
+                in which I proposed CMR for the first time to explain the formation
+                of the Stick filament in the Orion A giant molecular cloud.
+                As the collision continues along x-axis, more 
+                dense gas forms in the pancake (y-z plane or the 
+                collision midplane) which is continuously 
+                transported to the central filament. At the end, 
+                helical fields wrap around the filament with 
+                confining surface pressure. Formation of 
+                dense cores and stars shall follow in the filament.
+            </p>
+            <div class="media-grid">
+                <div class="media-column">
+                    <figure>
+                        <iframe src="interactive/mrcol_filament.html" height="380" width="100%"></iframe>
+                        <figcaption>
+                            The interactive plot (made by Dr. Griselda Arroyo-Chávez) 
+                            shows the filament at snapshot 0.6 Myr 
+                            from the fiducial model MRCOL in the original paper 
+                            <a href="https://iopscience.iop.org/article/10.3847/1538-4357/abc687" 
+                            target="_blank">Kong et al. (2021, ApJ, 906, 80)</a>.
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="media-column">
+                    <figure>
+                        <img src="figures/mayavi_stream.png" alt="CMR streamlines" style="width:100%;">
+                        <figcaption>
+                            Magnetic field streamlines around the filament.
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section>
+            <p>
+                While going through the <a href="research-carmaorion.html" target="_blank">CARMA-NRO</a>
+                survey C<sup>18</sup>O data cube, I noticed a special filament (the Stick) at the 
+                southern end of the integral-shaped filament. It shows ring-like fibers at different 
+                velocity channels (see left column in the figure below). 
+                These ring-like fibers resemble those structures 
+                in magnetic reconnection simulations, which motivated me to model the filament formation 
+                in the context of magnetic reconnection. To my surprise, the 15-year-long effort by
+                Dr. Carl Heiles who observed the HI Zeeman effect 
+                (<a href="https://iopscience.iop.org/article/10.1086/313010" target="_blank">Heiles (1997), ApJS, 111, 245</a>)
+                showed a reverse magnetic field on two sides of the Orion A cloud.
+                This field-reversal is a necessary condition for CMR.
+                Considering other observational facts such as the double-velocity spectral feature and
+                the perpendicular plane-of-the-sky magnetic fields 
+                (e.g., <a href="https://www.aanda.org/articles/aa/full_html/2019/09/aa35779-19/aa35779-19.html" target="_blank">Soler (2019), A&A, 629, 96</a>),
+                the only initial condition for the model is a setup like the right panel in the figure below.
+                So I used the <a href="https://www.athena-astro.app" target="_blank">Athena++</a> code 
+                to set up a collision simulation between two spherical diffuse clouds (we always start
+                with spheres:) with reverse magnetic fields (see the left panel in the top figure).
+            </p>
+            <div class="media-grid">
+                <div class="media-column">
+                    <figure>
+                        <img src="figures/ringfork.png" alt="rings and forks" style="width:100%;">
+                        <figcaption>
+                            Two C<sup>18</sup>O channel maps (channel velocity at lower-right) from the 
+                            <a href="research-carmaorion.html" target="_blank">CARMA-NRO</a>
+                            survey C<sup>18</sup>O data cube.
+                            The two rows show the same channels, except that the top row uses blue dashed
+                            curves to highlight the fiber-like structures that were referred to as 
+                            the rings and forks in <a href="https://iopscience.iop.org/article/10.3847/1538-4357/abc687" 
+                            target="_blank">Kong et al. (2021, ApJ, 906, 80)</a>.
+                            They resemble those structures in magnetic reconnection simulations.
+                            The resemblance is the motivation for CMR.
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="media-column">
+                    <figure>
+                        <img src="figures/cmrIC.png" alt="CMR Initial Conditions" style="width:100%;">
+                        <figcaption>
+                            A schematic diagram for the initial condition for the simulation.
+                            The two diffuse clouds collide at the interface of the reverse field.
+                            We (the observer) view the system with an inclination, so that we see
+                            both the line-of-sight reverse field and the plane-of-the-sky 
+                            perpendicular field. To match the observation, the filament should
+                            form along the y-axis (the red circle in the figure shows the 
+                            filament cross-section).
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <p>
+                Surprisingly, instead of forming a compressed “pancake” structure, 
+                the collision resulted in the formation of a filament. This outcome 
+                contrasts with the intuitive expectation that a head-on collision 
+                between two spherical bodies would simply create a flattened 
+                structure at the center. However, a closer examination of a 
+                simulation slice revealed that a pancake did initially form. 
+                Soon after, it became wrapped by magnetic field loops, which 
+                exerted strong tension and gradually squeezed the pancake material 
+                toward the central axis, forming the filament. In other words,
+                <b>the filament formation does not need gravity!</b>
+                Although, gravity will take over with the growth of the 
+                filament mass, as long as the cloud collision continues.
+                <br>
+                <br>
+                The figure below illustrates the formation of these magnetic loops. 
+                The collision triggered magnetic reconnection on both sides of the 
+                pancake, generating two half-loops and a full loop. The half-loops 
+                pulled gas outward, while the full loop compressed the pancake inward. 
+                As the collision progressed, ongoing reconnection continuously 
+                funneled dense gas into the central filament. This dynamic process 
+                is shown in the movie in the top figure. 
+            </p>
+            <figure>
+                <img src="figures/cmr2d.pdf" alt="CMR 2D" style="width:80%;">
+                <figcaption>
+                    A slice of the x-z plane in the CMR simulation.
+                    It shows how the collision compresses the reverse field 
+                    and triggers magnetic reconnection. The process results in 
+                    a pattern of half-loop, loop, half-loop of the field in 
+                    the collision midplane (x=0). Magnetic tension of the 
+                    reconnected field squeezes the pancake to z=0, resulting
+                    in a filament along the y-axis.
+                </figcaption>
+            </figure>
+            <p>
+                Using the model filament, I performed synthetic observations
+                and compared the resulting radiative transfer images with 
+                actual observational data. The model showed strong agreement 
+                with observed features, including the column density distribution, 
+                the position-velocity diagram, and overall morphological 
+                characteristics. Notably, it provided a natural explanation 
+                for the observed reversed magnetic field. An intriguing 
+                implication emerged from this analysis: the structures within 
+                the CMR filament appear to be confined by surface magnetic 
+                pressure. This finding aligns with the conclusion of 
+                <a href="https://iopscience.iop.org/article/10.3847/1538-4357/aa8631" target="_blank">Kirk et al. (2017)</a>, 
+                which suggests that dense cores in Orion are primarily pressure-confined.
+            </p>
+        </section>
+        <section>
+            <p>
+                To investigate whether a filament like the Stick can form stars,
+                we used the <a href="https://doi.org/10.1111/j.1365-2966.2009.15715.x" target="_blank">Arepo</a>
+                code with sink formation to repeat the above Athena++ simulation.
+                First, the filament formation was reproduced in the Arepo simulation,
+                so that CMR was independently confirmed with a different code.
+                Second, the filament collapsed and formed a star cluster,
+                but only after the filament became massive enough.
+                An intriguing finding was that the star formation rate in CMR
+                was a factor of two lower than a control model without CMR.
+                The lower rate was due to the surface magnetic field that 
+                acted like a shield and hindered gas inflow. 
+                The result was reported in
+                <a href="https://doi.org/10.1093/mnras/stac2932" target="_blank">Kong et al. (2022), MNRAS, 517, 4679</a>.
+            </p>
+            <p>
+                In <a href="https://iopscience.iop.org/article/10.3847/1538-4365/acbfb0" target="_blank">Kong et al. (2023), ApJ, 265, 58</a>,
+                I led a brief parameter exploration of CMR to see how different
+                initial conditions affect the filament property.
+                Again, I used Athena++ for the simulations, following the 2021 Stick paper.
+                A notable finding was that a curved filament would form if 
+                the initial colliding clouds have different radii or different density.
+            </p>
+            <figure>
+                <img src="figures/cmrfilangle.pdf" alt="CMR filament different view" style="width:80%;">
+                <figcaption>
+                    Synthetic images of CMR filament from different angles.
+                </figcaption>
+            </figure>
+            <p>
+                Using the exploration data, Dr. Duo Xu utilized machine-learning techniques
+                to capture the morphological features of CMR filaments.
+                Then, we applied the machine-learning models to the 
+                <a href="http://archives.esac.esa.int/hsa/whsa/" target="_blank">Herschel</a>
+                far infrared images of several filamentary clouds, including the Taurus cloud,
+                the Orion cloud, and the Auriga–California Cloud. Several filamentary structures 
+                of these clouds were identified as CMR filaments. The findings were reported in
+                <a href="https://iopscience.iop.org/article/10.3847/1538-4357/acefce" target="_blank">Xu et al. (2023)</a>.
+                Notably, these clouds were reported to have reverse magnetic fields
+                (<a href="https://doi.org/10.3389/fspas.2022.940027" target="_blank">Tahani (2022)</a>
+                and private communication).
+            </p>
+        </section>
+        <section>
+            <p>
+                The MRCOL simulation began with molecular gas collision. 
+                A natural follow-up question is whether collisions between atomic gas 
+                can also lead to molecular cloud formation. In  
+                <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ad73a5" target="_blank">Kong et al. (2024), ApJ, 975, 97</a>,
+                we used Arepo again to model CMR within the cold neutral medium (CNM). 
+                The results showed that a filamentary molecular cloud successfully formed. 
+                This cloud exhibited numerous fiber-like substructures, with sinks 
+                actively accreting material through streamers. Recall from 
+                <a href="https://doi.org/10.1093/mnras/stac2932" target="_blank">Kong et al. (2022)</a>,
+                that sink accretion was only possible through streamers, 
+                as surface magnetic fields inhibited free gas inflow. 
+                Remarkably, this behavior persisted at a much larger scale (20 pc), 
+                with all sinks in the molecular cloud accreting via streamers.
+                Most notably, the molecular cloud was naturally turbulent, 
+                driven by reconnected magnetic fields that funneled gas into the filament 
+                at supersonic (Alfvénic) speeds. This process compressed and transported 
+                shocked gas into the filament in a piece-by-piece manner. Consequently, 
+                <b>filament formation in this scenario follows a bottom-up process</b> -- 
+                distinct from the traditional top-down view of star formation, 
+                where gravity collects diffuse gas into a molecular cloud, 
+                which then collapses and fragments into clumps and cores. 
+                Remember, CMR filament formation proceeds without the need for gravity.
+                In <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ac70cd" target="_blank">Kong (2022), ApJ, 933, 40</a>,
+                I also explored CMR in warm neutral medium in a disk galaxy.
+            </p>
+            <figure>
+                <img src="figures/CMRCNM1.pdf" alt="CMR CNM 1" style="width:100%;">
+                <figcaption>
+                    Results from <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ad73a5" target="_blank">Kong et al. (2024)</a>.
+                    Note the supersonic gas motion due to Alfvénic magnetic transportation.
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="figures/CMRCNM2.pdf" alt="CMR 2D" style="width:100%;">
+                <figcaption>
+                    Results from <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ad73a5" target="_blank">Kong et al. (2024)</a>,
+                    showing the molecular gas formation and sink accretion.
+                </figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Dr. Shuo Kong</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

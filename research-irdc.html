@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRDC</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="group.html">Group</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">Research ▼</a>
+                    <div class="dropdown-content">
+                        <a href="research-irdc.html">Infrared Dark Clouds</a>
+                        <a href="research-carmaorion.html">The CARMA-NRO Orion Survey</a>
+                        <a href="research-arizona.html">Arizona Radio Telescopes</a>
+                        <a href="research-cmr.html">Collision-induced Magnetic Reconnection</a>
+                        <!-- <a href="mrcol_filament.html">interactive</a> -->
+                    </div>
+                </li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="talks.html">Talks</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Infrared Dark Clouds (IRDCs)</h2>
+            <p>
+                An IRDC is a dense, cold region of gas and dust in the 
+                interstellar medium that appears dark against the 
+                bright infrared background of the Milky Way. 
+                These clouds are cold (typically around 10-20 K) and dense 
+                (gas number densities ~10<sup>5</sup> cm<sup>-3</sup> which is 
+                much higher than the average interstellar medium), and
+                contain large amounts of dust that absorb and block background 
+                infrared light, causing them to appear as dark silhouettes in 
+                infrared images (e.g., from the Spitzer Space Telescope).
+                <figure>
+                    <img src="figures/G28.png" alt="IRDC G28" style="width:100%;">
+                    <figcaption>A Spitzer image of the IRDC G28 (aka the Dragon IRDC).</figcaption>
+                </figure>
+                IRDCs are ideal birthplaces of massive stars and star clusters 
+                because their high densities and low temperatures allow gravity 
+                to overcome internal pressure, leading to gravitational collapse 
+                and star formation. In particular, the large mass reservoir in IRDC
+                favors the formation of high-mass stars (more than 8 solar masses) 
+                which are rare and short-lived but critically influence galactic evolution.
+                Therefore, observing star-forming activities in IRDCs will improve
+                our understanding of the physical process of massive star formation.
+            </p>
+            <p>
+                <b>Millimeter wavelengths observations with interferometers:</b>
+            </p>
+            <p>
+                I have been studying star formation in distant IRDCs using interferometers
+                at mm/sub-mm wavelengths. These wavelengths contain dust continuum emission 
+                and molecular line emission that can penetrate the thick gas and dust
+                that obscure the cloud at shorter wavelengths.
+                <figure>
+                    <img src="figures/g28.pdf" alt="G28 analysis" style="width:100%;">
+                    <figcaption>
+                        Left: Spitzer image of G28 (background) with star-forming cores (green) 
+                        and bipolar CO outflows (blue and red). Right: core mass function (top),
+                        core growth statistics (middle), and outflow-filament alignment (bottom).
+                    </figcaption>
+                </figure>
+            </p>
+            <p>
+                Using the <a href="https://www.almaobservatory.org/en/home/" target="_blank">
+                    Atacama Large Millimeter/submillimeter Array (ALMA)</a>, 
+                    I have mapped the IRDC G28 in the 1.3 mm dust continuum along 
+                    with multiple molecular line emissions. In the figure above, 
+                    the green color represents dust emission, which traces the 
+                    dense cores deeply embedded within the cloud. These cores are 
+                    localized regions of high density where individual stars or 
+                    multiple systems are formed. As shown, the dense cores align 
+                    well with the dark lane seen in the infrared emission. 
+                    This alignment reveals that although this IRDC appears quiescent, 
+                    it is actively forming a cluster of stars.
+                    <br>
+                    <br>
+                    Star formation activity is further evidenced by CO molecular 
+                    outflows. In the figure, the blueshifted and redshifted 
+                    high-velocity CO gas forms bipolar outflows originating 
+                    from the dense cores, indicating ongoing accretion onto 
+                    central protostars. These protostars will continue accreting 
+                    material from their surroundings until they eventually expel 
+                    the remaining gas, unveiling themselves as a nascent star 
+                    cluster. The expelled gas will return to the interstellar 
+                    medium, feeding the next cycle of molecular cloud and star formation.
+                    <br>
+                    <br>
+                    With the ALMA data, I studied the core mass distribution in G28,
+                    showing a shallower core mass function (CMF) than the typical 
+                    stellar initial mass function (IMF). Similar results were seen in 
+                    other massive star-forming regions (e.g., 
+                    the <a href="https://www.almaimf.com/" target="_blank">
+                        ALMA-IMF Large Program</a>). Either the CMF has little
+                    effect on the final IMF, or additional physics is needed to
+                    explain the slope change. The results were reported in 
+                    <a href="https://iopscience.iop.org/article/10.3847/1538-4357/aaffd5" target="_blank">Kong (2019), ApJ, 873, 31</a>.
+                    <br>
+                    <br>
+                    By examining the outflows in G28, one can see that they are 
+                    roughly orthogonal to the filamentary dark lanes. To investigate 
+                    this further, I conducted a statistical analysis of the relative 
+                    orientation between the outflows and the filaments, which I presented in 
+                    <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ab07b9" target="_blank">Kong et al. (2019), ApJ, 874, 104</a>.
+                    The result shows that the relative orientation tends to be close to
+                    90 degree, suggesting the presence of a large-scale physical mechanism 
+                    that maintains this alignment. Such a mechanism could be closely related to, 
+                    or even responsible for, the formation of the cloud itself.
+                    <br>
+                    <br>
+                    Using the CO outflow data, one can distinguish between cores with and 
+                    without signs of star formation, at least to some extent. Assuming that 
+                    cores exhibiting outflows are more evolved than those without, 
+                    comparing the two types can reveal whether core mass increases over time. 
+                    In <a href="https://iopscience.iop.org/article/10.3847/1538-4357/abefe7" target="_blank">Kong et al. (2021), ApJ, 912, 156</a>,
+                    I conducted a statistical test of the core masses and found that 
+                    protostellar cores tend to be more massive than starless ones. 
+                    This result suggests that dense cores are not static in mass but 
+                    instead actively interact with their surroundings by continuing to accrete material.
+                    <figure>
+                        <img src="figures/binary.pdf" alt="G28 binary" style="width:80%;">
+                        <figcaption>
+                            From top-left to lower-left clockwise, the figure gradually
+                            zooms in to show the hierarchical structure of a dense core 
+                            and the embedded binary. The core is at the southern end of G28.
+                            See <a href="https://iopscience.iop.org/article/10.3847/1538-4357/acd252" target="_blank">Kong et al. (2023), ApJ, 950, 187</a> for details.
+                        </figcaption>
+                    </figure>
+                    Using the ALMA C9 array configuration, we observed the massive dense core 
+                    C1-S1 located at the southern end of G28. This region exhibits the highest extinction 
+                    (<a href="https://iopscience.iop.org/article/10.3847/2041-8205/829/1/L19" target="_blank">Lim et al. (2016), ApJL, 829, 19</a>)
+                    in the cloud, which is why we pay particular attention on it. 
+                    Given its substantial mass reservoir, C1-S1 is a strong candidate 
+                    for forming a massive star. The C9 configuration offers ALMA's second-highest 
+                    spatial resolution in Band 6 (~0.02", or about 100 AU), 
+                    enabling us to resolve fine structural details. 
+                    Thanks to ALMA's exceptional sensitivity, we were able to witness 
+                    the formation of a binary system within the massive C1-S1 core. 
+                    This discovery aligns with current understanding that massive stars 
+                    almost always form in binary or multiple systems. Remarkably, 
+                    our observations capture the initial stages of such a system, 
+                    providing critical constraints on theories of massive star formation.
+                    The results were reported in 
+                    <a href="https://iopscience.iop.org/article/10.3847/1538-4357/acd252" target="_blank">Kong et al. (2023), ApJ, 950, 187</a>.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Dr. Shuo Kong</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

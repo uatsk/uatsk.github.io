@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARO</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="group.html">Group</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">Research ▼</a>
+                    <div class="dropdown-content">
+                        <a href="research-irdc.html">Infrared Dark Clouds</a>
+                        <a href="research-carmaorion.html">The CARMA-NRO Orion Survey</a>
+                        <a href="research-arizona.html">Arizona Radio Telescopes</a>
+                        <a href="research-cmr.html">Collision-induced Magnetic Reconnection</a>
+                        <!-- <a href="mrcol_filament.html">interactive</a> -->
+                    </div>
+                </li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="talks.html">Talks</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>The Arizona Radio Observatory (ARO)</h2>
+            <p>
+                The <a href="https://aro.as.arizona.edu" target="_blank">Arizona Radio Observatory (ARO)</a>
+                is a research facility 
+                dedicated to radio astronomy, operated by the Steward Observatory 
+                at the University of Arizona in Tucson. ARO manages two key 
+                radio telescopes: the 12-meter Telescope on Kitt Peak and 
+                the Submillimeter Telescope (SMT) on Mount Graham. 
+                These instruments are used to observe the universe at 
+                millimeter and submillimeter wavelengths, allowing astronomers 
+                to study cold, dense regions of space where stars and planets form.
+                ARO has been at the forefront of molecular astrophysics, 
+                enabling the discovery and analysis of complex molecules 
+                in interstellar space, the structure of molecular clouds, 
+                star formation processes, and galactic dynamics. 
+                Notably, ARO has been part of the
+                <a href="https://eventhorizontelescope.org" target="_blank">Event Horizon Telescope</a>
+                that maps supermassive black holes (see the press release 
+                <a href="https://eventhorizontelescope.org/press-release-april-10-2019-astronomers-capture-first-image-black-hole">M87</a>).
+                The observatory serves as a critical training ground 
+                for students and researchers in astrophysics.
+            </p>
+            <p>
+                In <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ad0a8f" target="_blank">Baade et al. (2024), ApJ, 960, 33</a>,
+                our previous undergraduate student Jonah Baade led a study of the molecular gas 
+                in the Cygnus-X molecular cloud complex. We present new observations of the 
+                southern Cygnus-X complex using CO(2-1) and <sup>13</sup>CO(2-1) emission lines, 
+                obtained with the SMT. This region is heavily influenced by stellar feedback 
+                from the nearby Cygnus OB2 association. To investigate the <b>volume density</b> 
+                structure of the molecular gas, we combined our SMT maps with existing CO(1-0) 
+                and <sup>13</sup>CO(1-0) data from the <a href="https://cygnus45.github.io" target="_blank">
+                Nobeyama 45-meter Cygnus-X CO Survey</a>. 
+                We applied excitation modeling using <a href="https://var.sron.nl/radex/radex.php" target="_blank">RADEX</a>
+                to estimate local physical conditions and gas densities across the region.
+                <br>
+                <br>
+                Jonah identified velocity-coherent components within the data, 
+                particularly those associated with the high-density structures. 
+                These selected structures were used to construct an empirical volume density 
+                probability distribution function (ρ-PDF), representing 
+                the distribution of gas volume densities in Cygnus-X. The resulting ρ-PDF 
+                followed a power-law form, spanning densities between 10<sup>4.5</sup> and 
+                10<sup>5.5</sup> cm<sup>-3</sup>, with a best-fit slope of α = -1.12 ± 0.05.
+                This slope is notably shallower than predicted by models of gravitational 
+                collapse or rotationally supported cloud structures, which typically yield 
+                steeper density distributions. We interpret this as a possible 
+                signature of stellar feedback -- likely from Cygnus OB2 -- disrupting or reshaping 
+                the gas and injecting turbulence into the cloud. 
+                <figure>
+                    <img src="figures/peak_12co.pdf" alt="Cygnus-X 12CO peak intensity" style="width:100%;">
+                    <figcaption>
+                        Peak intensity map of the <sup>12</sup>CO(2-1) data. 
+                        See <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ad0a8f" target="_blank">Baade et al. (2024), ApJ, 960, 33</a>
+                        for details.
+                    </figcaption>
+                </figure>
+                The study provides an important empirical constraint on the internal 
+                structure of molecular clouds under the influence of stellar feedback. 
+                The derived ρ-PDF offers a critical benchmark for testing theoretical models 
+                and numerical simulations of cloud evolution, particularly those aiming to 
+                reproduce observed density distributions in environments subject to intense 
+                radiative and mechanical feedback. Matching this 
+                observed shallow ρ-PDF in future simulations will be key to identifying the 
+                physical mechanisms driving star formation in such complex regions.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Dr. Shuo Kong</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
