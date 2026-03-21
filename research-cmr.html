@@ -340,6 +340,84 @@
                 </figcaption>
             </figure>
         </section>
+        <section>
+            <p>
+                Recently, I revisit the MRCOL simulation to look for more testable observational features.
+                In particular, I look into kinematic features to leverage the position-position velocity
+                information provided by modern (sub-)mm molecular line observations. Using CO synthetic 
+                cubes, I find that CMR predicts two main kinematic features visible in position-velocity 
+                (PV) diagrams. The first is a transverse blueshift-redshift-blueshift-redshift (BRBR) 
+                pattern caused by a combination of converging gas motion toward the filament and diverging
+                motion away from it. The pattern is a direct result of the combination of half-loop, 
+                full-loop, half-loop field pattern in the collision midplane (see the x-z slice plot above).
+                The outflowing gas due to the half-loop is a typical feature of magnetic reconnection.
+                The figure below illustrates the origin of the BRBR pattern.
+            </p>
+            <figure>
+                <img src="figures/rtangle_transversePV.png" alt="transversePV" style="width:100%;">
+                <figcaption>
+                    The origin of the BRBR pattern. The top-left panel shows a conceptual slice across
+                    the filament (the orange circle shows the filament cross section).
+                    The dashed curves show the field lines,
+                    including the two half-loops at two ends and the one full-loop in the middle.
+                    The green ellipse shows the imaginary compression pancake, which is encircled 
+                    by the full-loop. The thick gray arrows indicate the converging motion and 
+                    the diverging motion. 
+                    The top-right panel shows a transverse PV-diagram for <sup>13</sup>CO(1-0). 
+                    The transverse PV-cut is shown as the vertical line in the bottom-right panel.
+                    The bottom-left panel shows a channel map of synthetic C<sup>18</sup>O(1-0) data.
+                    The horizontal dashed line marks the location of the filament.
+                    The bottom-right panel shows a channel map of synthetic <sup>13</sup>CO(1-0) data.
+                    The field of view is the same as the C<sup>18</sup>O panel.
+                </figcaption>
+            </figure>
+            <p>
+                However, the BRBR feature primarily depends on emission outside the filament,
+                which is difficult to confirm observationally because the signal is weak and
+                easily confused with surrounding gas. I don't find a clear BRBR pattern around
+                the Stick filament in the CARMA-NRO Orion data. So the usefulness of the BRBR 
+                pattern remains to be seen. 
+            </p>
+            <p>
+                It turns out a velocity oscillation along the filament spine can be a better 
+                observational test for CMR. It appears as a zigzag pattern in longitudinal PV diagrams. 
+                This oscillation arises from clumpy gas being intermittently transported into the 
+                filament by magnetic tension, continuously stirring the filament. The figure below 
+                shows the pattern in both synthetic images and observation data.
+            </p>
+            <figure>
+                <img src="figures/obsPV.png" alt="longitudinal PV" style="width:100%;">
+                <figcaption>
+                    Longitudinal PV-diagrams in observation and synthetic images.
+                    The left column shows channel maps for the Stick filament
+                    in the CARMA-NRO Orion data for C<sup>18</sup>O (top) and <sup>13</sup>CO (bottom).
+                    The channel is at the central velocity (~8.3 km s<sup>-1</sup>) of the Stick filament.
+                    The straight lines are identical PV-cuts through the main axis of the Stick.
+                    The corresponding PV-diagrams are shown in the
+                    middle column for C<sup>18</sup>O (top) and <sup>13</sup>CO (bottom).
+                    The right column shows the synthetic <sup>13</sup>CO PV-diagram for two projections.
+                    The PV-cuts are along the horizontal lines in the previous channel maps.
+                </figcaption>
+            </figure>
+            <p>
+                Interestingly, in the original CARMA-NRO Orion Survey paper 
+                <a href="https://iopscience.iop.org/article/10.3847/1538-4365/aabafc" target="_blank">Kong et al. (2018), ApJS, 236, 25</a>,
+                we found similar velocity oscillation along the spine of the integral-shaped filament in Orion A.
+                The figure below shows an example of their <sup>13</sup>CO PV-diagram (adapted from the paper).
+                But see their other figures for <sup>12</sup>CO and C<sup>18</sup>O.
+                This is consistent with our suspect that Orion A formed via CMR.
+                Interestingly, <a href="https://iopscience.iop.org/article/10.1088/0004-637X/741/2/112" target="_blank">Poidevin et al. (2011), ApJ, 741, 112</a>
+                found evidence of a helical field around the OMC-1 filament, which is consistent with CMR.
+            </p>
+            <figure>
+                <img src="figures/isfpv.png" alt="ISF PV" style="width:100%;">
+                <figcaption>
+                    Longitudinal PV-diagram along the spine of the integral-shaped filament in Orion A 
+                    adapted from Figure 21 of <a href="https://iopscience.iop.org/article/10.3847/1538-4365/aabafc" target="_blank">Kong et al. (2018), ApJS, 236, 25</a>.
+                    See their Figure 5 for the PV-cut.
+                </figcaption>
+            </figure>
+        </section>
     </main>
 
     <footer>
