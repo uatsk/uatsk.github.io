@@ -406,15 +406,69 @@
                 The figure below shows an example of their <sup>13</sup>CO PV-diagram (adapted from the paper).
                 But see their other figures for <sup>12</sup>CO and C<sup>18</sup>O.
                 This is consistent with our suspect that Orion A formed via CMR.
-                Interestingly, <a href="https://iopscience.iop.org/article/10.1088/0004-637X/741/2/112" target="_blank">Poidevin et al. (2011), ApJ, 741, 112</a>
+                Interestingly, <a href="http://doi.org/10.1088/0004-637X/741/2/112" target="_blank">Poidevin et al. (2011)</a>
                 found evidence of a helical field around the OMC-1 filament, which is consistent with CMR.
             </p>
             <figure>
-                <img src="figures/isfpv.png" alt="ISF PV" style="width:100%;">
+                <img src="figures/isfpv.png" alt="ISF PV" style="width:80%;">
                 <figcaption>
                     Longitudinal PV-diagram along the spine of the integral-shaped filament in Orion A 
                     adapted from Figure 21 of <a href="https://iopscience.iop.org/article/10.3847/1538-4365/aabafc" target="_blank">Kong et al. (2018), ApJS, 236, 25</a>.
                     See their Figure 5 for the PV-cut.
+                </figcaption>
+            </figure>
+        </section>
+        <section>
+            <p>
+                Another interesting finding is that CMR filament has a typical diameter of
+                ~0.02-0.1 pc in the fiducial setup of the model. The reason is that the 
+                filament cross-section is essentially the so-called plasmoid when folks
+                in plasma physics study the plasmoid instability in magnetic reconnection.
+                Based on studies in, e.g., <a href="http://doi.org/10.3847/1538-4357/aa9789" target="_blank">Comisso et al. (2017)</a>,
+                the size of a plasmoid can grow to typically a fraction of the current sheet length
+                or a few times the current sheet thickness. 
+            </p>
+            <p>
+                In the fiducial CMR simulation, the expected current sheet thickness
+                (the thickness of the <i>pancake</i>) is ~ 0.02 pc. 
+                In the case of Sweet-Parker reconnection, 
+                the thickness &delta;<sub>SP</sub> is approximately:
+            </p>
+            <p style="text-align:center;">
+                &delta;<sub>SP</sub> &asymp; L S<sub>L</sub><sup>-1/2</sup>,
+            </p>
+            <p>
+                where <i>L</i> is the current sheet length and S<sub>L</sub> is the Lundquist number:
+            </p>
+            <p style="text-align:center;">
+                S<sub>L</sub> = L v<sub>A</sub></span> / &eta;
+            </p>
+            <p>
+                where v<sub>A</sub> = B / &radic;(4&pi;&rho;) is the Alfv&eacute;n speed and &eta; is the Ohmic resistivity. 
+                In MRCOL, <i>L</i> is approximated by the length of the <i>pancake</i>, which is about the radius of the colliding clump. Therefore, 
+                in code unit, L = 0.9, v<sub>A</sub> = 1.3, &eta; = 0.001, thus S<sub>L</sub> = 1170 and 
+                &delta;<sub>SP</sub> = 0.026 which corresponds to 0.026 pc. If we set L as half the clump radius, 
+                then S<sub>L</sub> = 585 and &delta;<sub>SP</sub> = 0.019 pc. Therefore, the CMR-filament diameter 
+                should be somewhere between 0.02 pc to 0.1 pc. 
+                This implies that the diameter of CMR-filaments is largely determined by the property of the current sheet.
+            </p>
+            <p>
+                Interestingly, in my simulations, I remember that the ability to form the filament with a
+                noticeable density increase depends on the simulation resolution, which was quite confusing to me at the time.
+                Now it becomes clear: the simulation needs to resolve the current sheet thickness in order to
+                see the formation of the filament. Otherwise, CMR happens but the filament is not prominent.
+                The figure below shows a resolution-dependent change of the filament formation.
+            </p>
+            <figure>
+                <img src="figures/filscale.png" alt="filament scale" style="width:100%;">
+                <figcaption>
+                    Density slice plots for y=0 slice for decreasing resolution (clockwise) at t=0.2 Myr. The
+                    top-left panel shows the result from MRCOL which has a cell size of 0.0078 pc. 
+                    The rest three panels gradually reduce the resolution by factors of 2 clockwise. 
+                    The lower-left panel has the largest cell size of 0.062 pc. 
+                    The colorscale shows the density in unit of nH2 = 840 cm-3. 
+                    The local and global maximum density is shown at the top of each panel. 
+                    Note that the initial clump density is 0.5 and the ambient density is a factor of 10 lower.
                 </figcaption>
             </figure>
         </section>
